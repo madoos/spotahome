@@ -33,7 +33,7 @@ const homesByCity = {
             items : 'query.itemsPerpage',
             page  : 'query.pageNumber'
         }),
-        spotahome.homecardsByCity
+        spotahome.homesByCity
     )
 };
 

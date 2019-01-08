@@ -33,8 +33,8 @@ const homecards = pipe(
     map(projectData)
 );
 
-// homecards :: Object -> Object
-const homecardsByCity = async ({ city, page = 1, items = 10 }) => {
+// homesByCity :: Object -> Object
+const homesByCity = async ({ city, page = 1, items = 10 }) => {
     const market = await getMarkets(city);
     const { data, paginator } = paginate(market, items, page);
     const ids = map(prop('id'), data);
@@ -51,6 +51,6 @@ const homeDetail = pipe(
 
 module.exports = {
     homecards,
-    homecardsByCity,
+    homesByCity,
     homeDetail
 };

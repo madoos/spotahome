@@ -9,7 +9,7 @@ const validateStructure = data =>
     });
 
 test('Should list markets by city with default options', async () => {
-    const { data, paginator } = await SpotahomeClient.homecardsByCity({
+    const { data, paginator } = await SpotahomeClient.homesByCity({
         city : 'madrid'
     });
     data.forEach(validateStructure);
@@ -17,7 +17,7 @@ test('Should list markets by city with default options', async () => {
 });
 
 test('Should list markets by city', async () => {
-    const { data, paginator } = await SpotahomeClient.homecardsByCity({
+    const { data, paginator } = await SpotahomeClient.homesByCity({
         city  : 'madrid',
         page  : 2,
         items : 200
