@@ -1,0 +1,937 @@
+{
+  "ok": true,
+  "data": {
+    "homecards": [
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 85349,
+        "features": {
+          "3000": true,
+          "3002": true,
+          "3007": true,
+          "3008": true,
+          "3009": true,
+          "3012": true,
+          "3015": true,
+          "3016": true,
+          "3021": true,
+          "3024": true,
+          "3100": true,
+          "4000": true,
+          "4002": true,
+          "4008": true,
+          "4009": true,
+          "4100": true,
+          "4104": true,
+          "4108": true,
+          "5001": true,
+          "5003": true,
+          "5007": true,
+          "5008": true,
+          "6001": true
+        },
+        "adId": 85349,
+        "roomId": null,
+        "type": "apartment",
+        "title": "Ideal rented apartment in Puerta del Sol, Madrid",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/484d95250b35f10dbc5b0fb576cdaa062ca8628909c01c279d1ed261.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/484d95250b35f10dbc5b0fb576cdaa062ca8628909c01c279d1ed261.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/484d95250b35f10dbc5b0fb576cdaa062ca8628909c01c279d1ed261.jpg"
+        },
+        "pricePerMonth": 1500,
+        "monthlyPrice": {
+          "type": "fixed",
+          "minimumPrice": 1500,
+          "fixedPrice": 1500
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Javi",
+        "url": "/madrid/for-rent:apartments/85349",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": false,
+        "roomType": [6001],
+        "aptFeatures": [
+          3021,
+          3009,
+          3008,
+          3100,
+          3007,
+          3012,
+          3024,
+          3000,
+          3002,
+          3015,
+          3016
+        ],
+        "roomFeatures": [4100, 4104, 4108, 4000, 4002, 4008, 4009],
+        "suitFeatures": [],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2019-01-08T12:02:31+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": false,
+          "rules": []
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 86325,
+        "features": {
+          "1100": true,
+          "1101": true,
+          "1103": true,
+          "1104": true,
+          "3000": true,
+          "3007": true,
+          "3009": true,
+          "3011": true,
+          "3013": true,
+          "3015": true,
+          "3017": true,
+          "3020": true,
+          "3024": true,
+          "4000": true,
+          "4002": true,
+          "4007": true,
+          "4102": true,
+          "4104": true,
+          "4108": true,
+          "4109": true,
+          "5001": true,
+          "5003": true,
+          "5007": true,
+          "6001": true
+        },
+        "adId": 86325,
+        "roomId": null,
+        "type": "apartment",
+        "title": "1 Bedroom Apartment near Gran Via in Madrid City Center",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/67bc80f704f1cb836efa3fa0f9687b11eddec0befa8de4c12dec8cff.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/67bc80f704f1cb836efa3fa0f9687b11eddec0befa8de4c12dec8cff.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/67bc80f704f1cb836efa3fa0f9687b11eddec0befa8de4c12dec8cff.jpg"
+        },
+        "pricePerMonth": 1200,
+        "monthlyPrice": {
+          "type": "byMonth",
+          "minimumPrice": 1200,
+          "pricesByMonth": {
+            "jan": 1200,
+            "feb": 1200,
+            "mar": 1200,
+            "apr": 1300,
+            "may": 1300,
+            "jun": 1300,
+            "jul": 1300,
+            "aug": 1300,
+            "sep": 1300,
+            "oct": 1300,
+            "nov": 1300,
+            "dec": 1300
+          }
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Javi",
+        "url": "/madrid/for-rent:apartments/86325",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": false,
+        "roomType": [6001],
+        "aptFeatures": [3017, 3020, 3009, 3007, 3011, 3024, 3000, 3013, 3015],
+        "roomFeatures": [4102, 4104, 4108, 4109, 4000, 4002, 4007],
+        "suitFeatures": [1100, 1101, 1103, 1104],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2019-01-08T12:02:31+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": false,
+          "rules": []
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 86326,
+        "features": {
+          "1100": true,
+          "1101": true,
+          "3000": true,
+          "3007": true,
+          "3009": true,
+          "3011": true,
+          "3013": true,
+          "3015": true,
+          "3017": true,
+          "3024": true,
+          "3100": true,
+          "4000": true,
+          "4002": true,
+          "4007": true,
+          "4100": true,
+          "4102": true,
+          "4109": true,
+          "5001": true,
+          "5003": true,
+          "5007": true,
+          "5008": true,
+          "6001": true
+        },
+        "adId": 86326,
+        "roomId": null,
+        "type": "apartment",
+        "title": "Modern two bedroom apartment for rent in Chueca - Madrid",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/6327c6082558a1f65c5c9eb3ca9b546b2d2a0ed74d2cde02d78339d9.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/6327c6082558a1f65c5c9eb3ca9b546b2d2a0ed74d2cde02d78339d9.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/6327c6082558a1f65c5c9eb3ca9b546b2d2a0ed74d2cde02d78339d9.jpg"
+        },
+        "pricePerMonth": 1350,
+        "monthlyPrice": {
+          "type": "fixed",
+          "minimumPrice": 1350,
+          "fixedPrice": 1350
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Javi",
+        "url": "/madrid/for-rent:apartments/86326",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": false,
+        "roomType": [6001],
+        "aptFeatures": [3017, 3009, 3100, 3007, 3011, 3024, 3000, 3013, 3015],
+        "roomFeatures": [4100, 4102, 4109, 4000, 4002, 4007],
+        "suitFeatures": [1100, 1101],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2019-01-08T12:02:31+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": false,
+          "rules": []
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 86327,
+        "features": {
+          "1100": true,
+          "1201": true,
+          "1202": true,
+          "3000": true,
+          "3007": true,
+          "3009": true,
+          "3011": true,
+          "3013": true,
+          "3015": true,
+          "3024": true,
+          "5000": true,
+          "5001": true,
+          "5003": true,
+          "5007": true,
+          "5008": true
+        },
+        "adId": 86327,
+        "roomId": null,
+        "type": "studio",
+        "title": "Bright studio apartment for rent in Lavapiés, Madrid",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/12708faf4b4bf18d4b0a502e8192193c7912fd994951d02fd6ce68c5.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/12708faf4b4bf18d4b0a502e8192193c7912fd994951d02fd6ce68c5.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/12708faf4b4bf18d4b0a502e8192193c7912fd994951d02fd6ce68c5.jpg"
+        },
+        "pricePerMonth": 800,
+        "monthlyPrice": {
+          "type": "fixed",
+          "minimumPrice": 800,
+          "fixedPrice": 800
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Cedric",
+        "url": "/madrid/for-rent:studios/86327",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": false,
+        "roomType": [],
+        "aptFeatures": [3009, 3007, 3011, 3024, 3000, 3013, 3015],
+        "roomFeatures": [],
+        "suitFeatures": [1100],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2019-01-08T12:02:31+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": false,
+          "rules": []
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 90851,
+        "features": {
+          "1100": true,
+          "1101": true,
+          "1102": true,
+          "1103": true,
+          "3000": true,
+          "3007": true,
+          "3009": true,
+          "3011": true,
+          "3013": true,
+          "3015": true,
+          "3024": true,
+          "4000": true,
+          "4002": true,
+          "4004": true,
+          "4007": true,
+          "4009": true,
+          "4010": true,
+          "4103": true,
+          "4104": true,
+          "4109": true,
+          "5000": true,
+          "5001": true,
+          "5003": true,
+          "5007": true,
+          "6000": true,
+          "6001": true
+        },
+        "adId": 90851,
+        "roomId": null,
+        "type": "apartment",
+        "title": "Modern 2-bedroom apartment for rent in Madrid Centro",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/89f4747370f1edc2eced15e649f62ef71f69e287fc6d774664b2f0a1.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/89f4747370f1edc2eced15e649f62ef71f69e287fc6d774664b2f0a1.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/89f4747370f1edc2eced15e649f62ef71f69e287fc6d774664b2f0a1.jpg"
+        },
+        "pricePerMonth": 1600,
+        "monthlyPrice": {
+          "type": "byMonth",
+          "minimumPrice": 1600,
+          "pricesByMonth": {
+            "jan": 1650,
+            "feb": 1650,
+            "mar": 1650,
+            "apr": 1650,
+            "may": 1650,
+            "jun": 1650,
+            "jul": 1650,
+            "aug": 1600,
+            "sep": 1650,
+            "oct": 1650,
+            "nov": 1650,
+            "dec": 1650
+          }
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Javier",
+        "url": "/madrid/for-rent:apartments/90851",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": false,
+        "roomType": [6000, 6001],
+        "aptFeatures": [3009, 3007, 3011, 3024, 3000, 3013, 3015],
+        "roomFeatures": [4103, 4104, 4109, 4000, 4002, 4004, 4007, 4009, 4010],
+        "suitFeatures": [1100, 1101, 1102, 1103],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2019-01-08T12:02:32+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": true,
+          "rules": [
+            {
+              "type": "ageRange",
+              "params": {
+                "minAge": 20,
+                "maxAge": 60
+              }
+            },
+            {
+              "type": "bookingTooEarly",
+              "params": {
+                "days": 180
+              }
+            },
+            {
+              "type": "minStay",
+              "params": {
+                "1": 1,
+                "2": 5,
+                "3": 4,
+                "4": 1,
+                "5": 1,
+                "6": 1,
+                "7": 1,
+                "8": 1,
+                "9": 5,
+                "10": 4,
+                "11": 4,
+                "12": 3
+              }
+            }
+          ]
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 94159,
+        "features": {
+          "1000": true,
+          "1100": true,
+          "1103": true,
+          "1104": true,
+          "3000": true,
+          "3007": true,
+          "3009": true,
+          "3012": true,
+          "3013": true,
+          "3015": true,
+          "3016": true,
+          "3017": true,
+          "3021": true,
+          "3024": true,
+          "3100": true,
+          "4000": true,
+          "4002": true,
+          "4004": true,
+          "4007": true,
+          "4010": true,
+          "4101": true,
+          "4103": true,
+          "4104": true,
+          "4108": true,
+          "5000": true,
+          "5001": true,
+          "5002": true,
+          "5003": true,
+          "5006": true,
+          "5007": true,
+          "5008": true,
+          "6000": true
+        },
+        "adId": 94155,
+        "roomId": 94159,
+        "type": "room_shared",
+        "title": "Warm room in shared apartment in Atocha and Delicias, Madrid",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/d7b3e8ac37caff7886b60b7aebe83b86d46740da16412be2b16a3dd6.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/d7b3e8ac37caff7886b60b7aebe83b86d46740da16412be2b16a3dd6.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/d7b3e8ac37caff7886b60b7aebe83b86d46740da16412be2b16a3dd6.jpg"
+        },
+        "pricePerMonth": 250,
+        "monthlyPrice": {
+          "type": "byMonth",
+          "minimumPrice": 250,
+          "pricesByMonth": {
+            "jan": 375,
+            "feb": 375,
+            "mar": 375,
+            "apr": 375,
+            "may": 375,
+            "jun": 375,
+            "jul": 375,
+            "aug": 250,
+            "sep": 375,
+            "oct": 375,
+            "nov": 375,
+            "dec": 375
+          }
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Alejandro",
+        "url": "/madrid/for-rent:rooms/94159",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": true,
+        "roomType": [6000],
+        "aptFeatures": [
+          3017,
+          3021,
+          3009,
+          3100,
+          3007,
+          3012,
+          3024,
+          3000,
+          3013,
+          3015,
+          3016
+        ],
+        "roomFeatures": [4101, 4103, 4104, 4108, 4000, 4002, 4004, 4007, 4010],
+        "suitFeatures": [1100, 1103, 1104],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2018-12-29T12:28:21+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": true,
+          "rules": [
+            {
+              "type": "ageRange",
+              "params": {
+                "minAge": 18,
+                "maxAge": 30
+              }
+            },
+            {
+              "type": "couplesNotAllowed",
+              "params": []
+            },
+            {
+              "type": "minStay",
+              "params": {
+                "1": 4,
+                "2": 4,
+                "3": 4,
+                "4": 4,
+                "5": 4,
+                "6": 1,
+                "7": 1,
+                "8": 1,
+                "9": 4,
+                "10": 4,
+                "11": 4,
+                "12": 4
+              }
+            }
+          ]
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 94160,
+        "features": {
+          "1000": true,
+          "1100": true,
+          "1103": true,
+          "1104": true,
+          "3000": true,
+          "3007": true,
+          "3009": true,
+          "3012": true,
+          "3013": true,
+          "3015": true,
+          "3016": true,
+          "3017": true,
+          "3021": true,
+          "3024": true,
+          "3100": true,
+          "4000": true,
+          "4002": true,
+          "4004": true,
+          "4007": true,
+          "4101": true,
+          "4103": true,
+          "4104": true,
+          "4108": true,
+          "5000": true,
+          "5001": true,
+          "5002": true,
+          "5003": true,
+          "5006": true,
+          "5007": true,
+          "5008": true,
+          "6000": true
+        },
+        "adId": 94155,
+        "roomId": 94160,
+        "type": "room_shared",
+        "title": "Cozy room in shared apartment in Atocha and Delicias, Madrid",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/c44c265c6bc2e7342bb2ac1fed5be0733423882af045c425c7f8db7b.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/c44c265c6bc2e7342bb2ac1fed5be0733423882af045c425c7f8db7b.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/c44c265c6bc2e7342bb2ac1fed5be0733423882af045c425c7f8db7b.jpg"
+        },
+        "pricePerMonth": 250,
+        "monthlyPrice": {
+          "type": "byMonth",
+          "minimumPrice": 250,
+          "pricesByMonth": {
+            "jan": 405,
+            "feb": 405,
+            "mar": 405,
+            "apr": 405,
+            "may": 405,
+            "jun": 405,
+            "jul": 405,
+            "aug": 250,
+            "sep": 405,
+            "oct": 405,
+            "nov": 405,
+            "dec": 405
+          }
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Alejandro",
+        "url": "/madrid/for-rent:rooms/94160",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": true,
+        "roomType": [6000],
+        "aptFeatures": [
+          3017,
+          3021,
+          3009,
+          3100,
+          3007,
+          3012,
+          3024,
+          3000,
+          3013,
+          3015,
+          3016
+        ],
+        "roomFeatures": [4101, 4103, 4104, 4108, 4000, 4002, 4004, 4007],
+        "suitFeatures": [1100, 1103, 1104],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2018-12-29T12:28:50+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": true,
+          "rules": [
+            {
+              "type": "ageRange",
+              "params": {
+                "minAge": 18,
+                "maxAge": 30
+              }
+            },
+            {
+              "type": "couplesNotAllowed",
+              "params": []
+            },
+            {
+              "type": "minStay",
+              "params": {
+                "1": 4,
+                "2": 4,
+                "3": 4,
+                "4": 4,
+                "5": 4,
+                "6": 1,
+                "7": 1,
+                "8": 1,
+                "9": 4,
+                "10": 4,
+                "11": 4,
+                "12": 4
+              }
+            }
+          ]
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 94161,
+        "features": {
+          "1000": true,
+          "1100": true,
+          "1103": true,
+          "1104": true,
+          "3000": true,
+          "3007": true,
+          "3009": true,
+          "3012": true,
+          "3013": true,
+          "3015": true,
+          "3016": true,
+          "3017": true,
+          "3021": true,
+          "3024": true,
+          "3100": true,
+          "4000": true,
+          "4002": true,
+          "4004": true,
+          "4007": true,
+          "4010": true,
+          "4101": true,
+          "4103": true,
+          "4104": true,
+          "4108": true,
+          "5000": true,
+          "5001": true,
+          "5002": true,
+          "5003": true,
+          "5006": true,
+          "5007": true,
+          "5008": true,
+          "6000": true
+        },
+        "adId": 94155,
+        "roomId": 94161,
+        "type": "room_shared",
+        "title": "Sweet room in apartment in Atocha and Delicias, Madrid",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/78ea5968488b163cab8d7f9e70ba43cc843253dc50ade5246654dc66.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/78ea5968488b163cab8d7f9e70ba43cc843253dc50ade5246654dc66.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/78ea5968488b163cab8d7f9e70ba43cc843253dc50ade5246654dc66.jpg"
+        },
+        "pricePerMonth": 375,
+        "monthlyPrice": {
+          "type": "byMonth",
+          "minimumPrice": 375,
+          "pricesByMonth": {
+            "jan": 375,
+            "feb": 375,
+            "mar": 375,
+            "apr": 375,
+            "may": 375,
+            "jun": 375,
+            "jul": 375,
+            "aug": 375,
+            "sep": 375,
+            "oct": 375,
+            "nov": 375,
+            "dec": 375
+          }
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Alejandro",
+        "url": "/madrid/for-rent:rooms/94161",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": true,
+        "roomType": [6000],
+        "aptFeatures": [
+          3017,
+          3021,
+          3009,
+          3100,
+          3007,
+          3012,
+          3024,
+          3000,
+          3013,
+          3015,
+          3016
+        ],
+        "roomFeatures": [4101, 4103, 4104, 4108, 4000, 4002, 4004, 4007, 4010],
+        "suitFeatures": [1100, 1103, 1104],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2018-12-29T12:28:20+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": true,
+          "rules": [
+            {
+              "type": "ageRange",
+              "params": {
+                "minAge": 18,
+                "maxAge": 30
+              }
+            },
+            {
+              "type": "couplesNotAllowed",
+              "params": []
+            },
+            {
+              "type": "minStay",
+              "params": {
+                "1": 4,
+                "2": 4,
+                "3": 4,
+                "4": 4,
+                "5": 4,
+                "6": 1,
+                "7": 1,
+                "8": 1,
+                "9": 4,
+                "10": 4,
+                "11": 4,
+                "12": 4
+              }
+            }
+          ]
+        },
+        "isNew": false
+      },
+      {
+        "description": null,
+        "thingsWeLike": null,
+        "thingsToKeepInMind": null,
+        "id": 107141,
+        "features": {
+          "1100": true,
+          "1103": true,
+          "1104": true,
+          "3000": true,
+          "3007": true,
+          "3008": true,
+          "3009": true,
+          "3012": true,
+          "3013": true,
+          "3015": true,
+          "3017": true,
+          "3024": true,
+          "3100": true,
+          "4000": true,
+          "4001": true,
+          "4002": true,
+          "4008": true,
+          "4100": true,
+          "4102": true,
+          "4104": true,
+          "4105": true,
+          "5000": true,
+          "5001": true,
+          "5002": true,
+          "5003": true,
+          "5006": true,
+          "5007": true,
+          "5008": true,
+          "6001": true
+        },
+        "adId": 107141,
+        "roomId": null,
+        "type": "apartment",
+        "title": "1-bedroom apartment with AC for rent in Imperial, Madrid",
+        "mainPhotoUrl": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/5c2360e2ef755e33febb4acd07f916b787c52dd37cffc60a1c463862.jpg",
+        "photoUrls": {
+          "homecardHidpi": "https://d1052pu3rm1xk9.cloudfront.net/pt_640_480/5c2360e2ef755e33febb4acd07f916b787c52dd37cffc60a1c463862.jpg",
+          "homecard": "https://d1052pu3rm1xk9.cloudfront.net/pt_320_240/5c2360e2ef755e33febb4acd07f916b787c52dd37cffc60a1c463862.jpg"
+        },
+        "pricePerMonth": 1600,
+        "monthlyPrice": {
+          "type": "byMonth",
+          "minimumPrice": 1600,
+          "pricesByMonth": {
+            "jan": 1600,
+            "feb": 1600,
+            "mar": 1600,
+            "apr": 1600,
+            "may": 1600,
+            "jun": 1600,
+            "jul": 1700,
+            "aug": 1700,
+            "sep": 1600,
+            "oct": 1600,
+            "nov": 1600,
+            "dec": 1600
+          }
+        },
+        "visited": false,
+        "neighborhoodName": "unsupported neighborhood name",
+        "runnerName": "Alejandro",
+        "url": "/madrid/for-rent:apartments/107141",
+        "favorite": false,
+        "checked": true,
+        "currencySymbol": "€",
+        "currencyLabel": "EUR",
+        "currencyIsoCode": "EUR",
+        "sharedRoom": false,
+        "roomType": [6001],
+        "aptFeatures": [
+          3017,
+          3009,
+          3008,
+          3100,
+          3007,
+          3012,
+          3024,
+          3000,
+          3013,
+          3015
+        ],
+        "roomFeatures": [4100, 4102, 4104, 4105, 4000, 4001, 4002, 4008],
+        "suitFeatures": [1100, 1103, 1104],
+        "relevance": null,
+        "city": "madrid",
+        "refreshAvailabilitiesDate": "2019-01-08T12:02:45+0000",
+        "reviews": {
+          "count": 0,
+          "ratingAverage": 0
+        },
+        "instantBooking": {
+          "isEnabled": false,
+          "rules": []
+        },
+        "isNew": false
+      }
+    ]
+  }
+}

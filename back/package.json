@@ -31,14 +31,18 @@
     "promisify-supertest": "^1.0.0"
   },
   "_moduleAliases": {
-    "@config": "src/config.js",
-    "@pagination": "src/pagination.js"
+    "@config": "src/config",
+    "@pagination": "src/pagination",
+    "@utils": "src/utils",
+    "@spotahome": "src/spotahome-client"
   },
   "jest": {
     "testEnvironment": "node",
     "moduleNameMapper": {
       "@config": "<rootDir>/src/config.js",
-      "@pagination": "<rootDir>/src/pagination"
+      "@pagination": "<rootDir>/src/pagination",
+      "@utils": "<rootDir>/src/utils",
+      "@spotahome": "<rootDir>/src/spotahome-client"
     }
   }
 }
