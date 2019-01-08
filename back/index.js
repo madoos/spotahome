@@ -1,1 +1,3 @@
-console.log('start server');
+require('module-alias/register');
+
+console.log(require('@config'));
