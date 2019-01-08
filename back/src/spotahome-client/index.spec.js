@@ -27,6 +27,11 @@ test('Should list markets by city', async () => {
 });
 
 test('Should get detail for homecard', async () => {
-    const data = await SpotahomeClient.detail(280397);
+    const data = await SpotahomeClient.homeDetail(280397);
     validateStructure(data);
+});
+
+test('Should get null for home that does not exist', async () => {
+    const data = await SpotahomeClient.homeDetail(123456);
+    expect(data).toEqual(null);
 });

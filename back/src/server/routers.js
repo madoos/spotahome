@@ -2,11 +2,15 @@ const {
     flow,
     createRouter,
     Joi,
-    projection
+    projection,
+    withStatus
 } = require('express-flow-extensions');
 const spotahome = require('@spotahome');
+const { path, isNil, complement } = require('ramda');
+const { OK, NO_CONTENT } = require('http-status');
+const hasData = complement(isNil);
 
-const listing = {
+const homesByCity = {
     method     : 'GET',
     path       : '/markets/:city',
     validation : {
@@ -33,4 +37,22 @@ const listing = {
     )
 };
 
-module.exports = createRouter([listing]);
+const homeDetail = {
+    method     : 'GET',
+    path       : '/detail/:id',
+    validation : {
+        params : {
+            id : Joi.number().required()
+        }
+    },
+    handler : flow(
+        path(['params', 'id']),
+        spotahome.homeDetail,
+        withStatus({
+            [OK]         : hasData,
+            [NO_CONTENT] : isNil
+        })
+    )
+};
+
+module.exports = createRouter([homesByCity, homeDetail]);

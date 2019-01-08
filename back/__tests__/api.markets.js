@@ -3,9 +3,10 @@ const server = require('@server')
 const api = request(server)
 const {OK, BAD_REQUEST} = require('http-status')
 const {prop} = require('ramda')
+const config = require('@config')
 
 const urls = {
-    markets : '/api/markets'
+    markets : `${config.server.baseURL}/markets`
 }
 
 test('Should list markets for city', async () => {

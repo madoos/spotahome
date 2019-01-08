@@ -42,8 +42,8 @@ const homecardsByCity = async ({ city, page = 1, items = 10 }) => {
     return { data : cards, paginator };
 };
 
-// homecards :: Number -> Object | null
-const detail = pipe(
+// homeDetail :: Number -> Object | null
+const homeDetail = pipe(
     unapply(getDetails),
     path(['data', 'data', 'homecards', 0]),
     ifElse(isNil, always(null), projectData)
@@ -52,5 +52,5 @@ const detail = pipe(
 module.exports = {
     homecards,
     homecardsByCity,
-    detail
+    homeDetail
 };
