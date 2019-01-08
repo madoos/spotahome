@@ -13,8 +13,24 @@ const debug = curry((tag, data) => {
     process.stdout.write(EOL);
 });
 
+const promisifyEvent = curry(({ resolve, reject }, ee) => {
+    return new Promise((res, rej) => {
+        ee.on(resolve, res).on(reject, rej);
+    });
+});
+
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const concatProps = curry((props, delimiter, obj) => {
+    const values = props.reduce((acc, key) => acc.concat(obj[key]), []);
+    return values.join(delimiter);
+});
+
 module.exports = {
     asyncMapParallel,
     debug,
-    hasError
+    hasError,
+    promisifyEvent,
+    wait,
+    concatProps
 };

@@ -4,10 +4,16 @@ const api = request(server)
 const {OK, BAD_REQUEST, NO_CONTENT} = require('http-status')
 const {prop} = require('ramda')
 const config = require('@config')
+const cache = require('@cache-client')
 
 const urls = {
     detail : `${config.server.baseURL}/detail`
 }
+
+beforeAll(async () => {
+    await cache.connect()
+    await cache.clear()
+})
 
 test('Should get a detail by id', async () => {
     await api

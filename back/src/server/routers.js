@@ -9,6 +9,10 @@ const spotahome = require('@spotahome');
 const { path, isNil, complement } = require('ramda');
 const { OK, NO_CONTENT } = require('http-status');
 const hasData = complement(isNil);
+const cache = require('@cache-client');
+
+const { concatProps } = require('@utils');
+const ONE_HOUR = 3600;
 
 const homesByCity = {
     method     : 'GET',
@@ -33,7 +37,11 @@ const homesByCity = {
             items : 'query.itemsPerpage',
             page  : 'query.pageNumber'
         }),
-        spotahome.homesByCity
+        cache.useWith(
+            spotahome.homesByCity,
+            ONE_HOUR,
+            concatProps(['city', 'items', 'page'], ':')
+        )
     )
 };
 
@@ -47,7 +55,7 @@ const homeDetail = {
     },
     handler : flow(
         path(['params', 'id']),
-        spotahome.homeDetail,
+        cache.useWith(spotahome.homeDetail, ONE_HOUR),
         withStatus({
             [OK]         : hasData,
             [NO_CONTENT] : isNil

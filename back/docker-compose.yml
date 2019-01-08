@@ -1,0 +1,7 @@
+version: '2'
+services:
+  cache:
+    image: redis:5.0.3
+    tty: true
+    ports:
+      - 6379:6379
