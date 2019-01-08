@@ -25,3 +25,8 @@ test('Should list markets by city', async () => {
     data.forEach(validateStructure);
     expect(paginator.pageNumber).toEqual(2);
 });
+
+test('Should get detail for homecard', async () => {
+    const data = await SpotahomeClient.detail(280397);
+    validateStructure(data);
+});

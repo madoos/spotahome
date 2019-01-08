@@ -7,7 +7,8 @@
     "tdd": "npm run test -- --watchAll",
     "test": "jest --coverage --verbose",
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "serve:coverage": "http-server coverage/lcov-report -o"
   },
   "author": "Maurice Domínguez",
   "license": "MIT",
@@ -26,6 +27,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "http-server": "^0.11.1",
     "jest": "^23.6.0",
     "nodemon": "^1.18.9",
     "promisify-supertest": "^1.0.0",
