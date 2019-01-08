@@ -1,7 +1,8 @@
 module.exports = {
     server : {
+        port    : process.env.SERVER_PORT || 3000,
         baseURL : '/api/homes',
-        port    : process.env.SERVER_PORT || 3000
+        apiDocs : '/docs'
     },
     api : {
         base      : 'https://www.spotahome.com/api/public/listings/search',

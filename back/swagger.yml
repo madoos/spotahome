@@ -1,0 +1,135 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: homes
+host: <HOST>
+basePath: /api/homes
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /markets/{city}:
+    get:
+      parameters:
+        - in: path
+          name: city
+          schema:
+            type: string
+          required: true
+          description: City ​​in which to look homes
+        - in: query
+          name: itemsPerpage
+          schema:
+            type: integer
+          description: The number of items in each page
+        - in: query
+          name: pageNumber
+          schema:
+            type: integer
+          description: Page selected
+
+      description: 'Get home markets by city.'
+      consumes:
+        - application/x-www-form-urlencoded
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: 'object'
+            items:
+              $ref: '#/definitions/home'
+          examples:
+            application/json:
+              {
+                data:
+                  [
+                    {
+                      id: 220022,
+                      photo: 'https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/002a0552560d7f427471fed49c668c7b98abb22ed7ce8ebc3601baa4.jpg',
+                      title: 'Studio apartment for rent in La Latina, Madrid',
+                      price: 1550,
+                    },
+                    {
+                      id: 226277,
+                      photo: 'https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/c5e12e58b197f6a01d453ae4f19a3c2eb35a779aed8654d971ecdb6a.jpg',
+                      title: 'Spacious studio apartment for rent in La Latina, Madrid',
+                      price: 1600,
+                    },
+                    {
+                      id: 230880,
+                      photo: 'https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/08687d4df4e232e56b62a5a85f78e6eef6d90dc7aab95c98e2faf93a.jpg',
+                      title: '2-bedroom apartment for rent in Almagro & Trafalgar, Madrid',
+                      price: 2862,
+                    },
+                    {
+                      id: 231260,
+                      photo: 'https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/25fd1c826f76117ffcc0742fbfb676ea87a2fa86b3db2c71fb8a8459.jpg',
+                      title: 'Excellent 2-bedroom apartment for rent in Almagro & Trafalga',
+                      price: 2756,
+                    },
+                    {
+                      id: 280393,
+                      photo: 'https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/91e793be1da6f8990f76d51b643b7f387420f30ca7e7fc31704e29f9.jpg',
+                      title: 'Tidy room for rent in 4-bedroom apartment in Lavapies',
+                      price: 600,
+                    },
+                    {
+                      id: 280394,
+                      photo: 'https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/c5967d7ef8983bb214aa7bc10cef910e85ec9bcc2f701a2711005c5f.jpg',
+                      title: 'Cozy room for rent in 4-bedroom apartment in Lavapies',
+                      price: 600,
+                    },
+                  ],
+                paginator:
+                  {
+                    pageNumber: 3,
+                    count: 7097,
+                    itemCountPerPage: 6,
+                    pages: 1183,
+                  },
+              }
+  /detail/{id}:
+    get:
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Home id
+      description: 'Get home detail.'
+      produces:
+        - application/html
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: 'object'
+            items:
+              $ref: '#/definitions/home'
+          examples:
+            {
+              id: 220022,
+              photo: 'https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/002a0552560d7f427471fed49c668c7b98abb22ed7ce8ebc3601baa4.jpg',
+              title: 'Studio apartment for rent in La Latina, Madrid',
+              price: 1550,
+            }
+        '204':
+          description: NO CONTENT
+definitions:
+  home:
+    type: object
+    properties:
+      id:
+        type: string
+      photo:
+        type: string
+      title:
+        type: string
+      price:
+        type: number
