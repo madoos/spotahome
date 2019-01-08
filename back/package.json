@@ -28,13 +28,15 @@
   "devDependencies": {
     "jest": "^23.6.0",
     "nodemon": "^1.18.9",
-    "promisify-supertest": "^1.0.0"
+    "promisify-supertest": "^1.0.0",
+    "supertest": "^3.3.0"
   },
   "_moduleAliases": {
     "@config": "src/config",
     "@pagination": "src/pagination",
     "@utils": "src/utils",
-    "@spotahome": "src/spotahome-client"
+    "@spotahome": "src/spotahome-client",
+    "@server": "src/server"
   },
   "jest": {
     "testEnvironment": "node",
@@ -42,7 +44,8 @@
       "@config": "<rootDir>/src/config.js",
       "@pagination": "<rootDir>/src/pagination",
       "@utils": "<rootDir>/src/utils",
-      "@spotahome": "<rootDir>/src/spotahome-client"
+      "@spotahome": "<rootDir>/src/spotahome-client",
+      "@server": "<rootDir>/src/server"
     }
   }
 }

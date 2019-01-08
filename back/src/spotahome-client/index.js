@@ -29,8 +29,7 @@ const homecards = pipe(
     )
 );
 
-const homecardsByCity = async (city, opt) => {
-    const { page, items } = opt || { page : 1, items : 10 };
+const homecardsByCity = async ({ city, page = 1, items = 10 }) => {
     const market = await getMarkets(city);
     const { data, paginator } = paginate(market, items, page);
     const ids = map(prop('id'), data);
