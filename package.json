@@ -1,0 +1,48 @@
+{
+  "name": "spotahome",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepublishOnly": "nsp check",
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "serve:coverage": "http-server coverage/lcov-report -o"
+  },
+  "keywords": [],
+  "author": "Maurice Domínguez",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "conventional-changelog-cli": "^2.0.11",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "http-server": "^0.11.1",
+    "husky": "^1.2.1",
+    "jest": "^23.6.0",
+    "jest-environment-node": "^23.4.0",
+    "lint-staged": "^8.1.0",
+    "nsp": "^3.2.1",
+    "prettier-eslint-cli": "^4.7.1",
+    "nodemon": "^1.18.9",
+    "coveralls": "^3.0.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --single-quote --bracket-spacing true --print-width 80 --write",
+      "eslint",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {}
+}
