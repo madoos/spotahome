@@ -24,6 +24,8 @@
     "module-alias": "^2.1.0",
     "ramda": "^0.26.1",
     "redis": "^2.8.0",
+    "redis-promisify": "^0.1.2",
+    "socket.io": "^2.2.0",
     "swagger-ui-express": "^4.0.2",
     "yamljs": "^0.3.0"
   },
@@ -42,7 +44,9 @@
     "@spotahome": "src/spotahome-client",
     "@server": "src/server",
     "@cache-client": "src/cache-client",
-    "@cache": "src/cache"
+    "@cache": "src/cache",
+    "@monitor-instance": "src/monitor/instance",
+    "@monitor": "src/monitor"
   },
   "jest": {
     "testEnvironment": "node",
@@ -53,7 +57,9 @@
       "@spotahome": "<rootDir>/src/spotahome-client",
       "@server": "<rootDir>/src/server",
       "@cache-client": "<rootDir>src/cache-client.js",
-      "@cache": "<rootDir>src/cache"
+      "@cache": "<rootDir>src/cache",
+      "@monitor-instance": "<rootDir>src/monitor/instance",
+      "@monitor": "<rootDir>src/monitor"
     }
   }
 }
