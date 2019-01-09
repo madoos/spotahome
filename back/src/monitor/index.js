@@ -22,15 +22,15 @@ class Monitor {
         const watchingHomes$ = connections$.pipe(
             mergeMap(client => fromEvent(client, WATCHING_HOME)),
             mergeMap(data => from(this.addUserWatching(data))),
-            tap(data => socket.emit(data.event, data)),
-            map(mergeObject({ type : WATCHING_HOME }))
+            map(mergeObject({ type : WATCHING_HOME })),
+            tap(data => socket.emit(data.event, data))
         );
 
         const leaveHomes$ = connections$.pipe(
             mergeMap(client => fromEvent(client, LEAVE_HOME)),
             mergeMap(data => from(this.removeUserWatching(data))),
-            tap(data => socket.emit(data.event, data)),
-            map(mergeObject({ type : LEAVE_HOME }))
+            map(mergeObject({ type : LEAVE_HOME })),
+            tap(data => socket.emit(data.event, data))
         );
 
         const usersCountByHomes$ = merge(watchingHomes$, leaveHomes$);
