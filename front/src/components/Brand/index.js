@@ -11,7 +11,7 @@ const Brand = ({ name }) => {
 };
 
 Brand.propTypes = {
-    name : string
+    name : string.isRequired
 };
 
 export default Brand;

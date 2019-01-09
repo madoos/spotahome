@@ -1,0 +1,11 @@
+.card-component {
+}
+
+.card-component .photo {
+  height: 160;
+  width: 260;
+}
+
+.card-component button {
+  cursor: pointer;
+}
