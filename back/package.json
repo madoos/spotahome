@@ -45,7 +45,7 @@
     "@utils": "src/utils",
     "@spotahome": "src/spotahome-client",
     "@server": "src/server",
-    "@cache-client": "src/cache-client",
+    "@cache-client": "src/cache/instance",
     "@cache": "src/cache",
     "@monitor-client": "src/monitor/instance",
     "@monitor": "src/monitor"
@@ -58,7 +58,7 @@
       "@utils": "<rootDir>/src/utils",
       "@spotahome": "<rootDir>/src/spotahome-client",
       "@server": "<rootDir>/src/server",
-      "@cache-client": "<rootDir>src/cache-client.js",
+      "@cache-client": "<rootDir>src/cache/instance",
       "@cache": "<rootDir>src/cache",
       "@monitor-client": "<rootDir>src/monitor/instance",
       "@monitor": "<rootDir>src/monitor"
