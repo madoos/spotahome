@@ -16,7 +16,7 @@ class Monitor {
         return new Monitor(...args);
     }
 
-    async connect(socket) {
+    connect(socket) {
         const connections$ = fromEvent(socket, 'connection');
 
         const watchingHomes$ = connections$.pipe(
@@ -61,5 +61,10 @@ class Monitor {
         };
     }
 }
+
+Monitor.events = {
+    LEAVE_HOME,
+    WATCHING_HOME
+};
 
 module.exports = Monitor;
