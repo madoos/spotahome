@@ -1,6 +1,6 @@
 const { curry, is } = require('ramda');
 const { EOL } = require('os');
-const log = require('single-line-log').stdout;
+const { stdout } = require('single-line-log');
 
 const asyncMapParallel = curry((f, xs) => Promise.all(xs.map(f)));
 
@@ -8,7 +8,7 @@ const hasError = is(Error);
 
 const { stringify } = JSON;
 
-const debug = curry((tag, data) => {
+const log = curry((tag, data) => {
     process.stdout.write(tag);
     process.stdout.write(EOL);
     process.stdout.write(
@@ -31,12 +31,12 @@ const concatProps = curry((props, delimiter, obj) => {
 });
 
 const notify = curry((tag, data) => {
-    log(`${tag}${EOL}${stringify(data, null, 2)}`);
+    stdout(`${tag}${EOL}${stringify(data, null, 2)}`);
 });
 
 module.exports = {
     asyncMapParallel,
-    debug,
+    log,
     hasError,
     promisifyEvent,
     wait,

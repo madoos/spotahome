@@ -2,7 +2,7 @@ require('module-alias/register');
 const config = require('@config');
 const server = require('@server');
 const cache = require('@cache-client');
-const { debug, notify } = require('@utils');
+const { log, notify } = require('@utils');
 const monitor = require('@monitor-client');
 const io = require('socket.io');
 const socket = io.listen(server, { origin : '*:*' });
@@ -15,4 +15,4 @@ const start = async conf => {
     return conf;
 };
 
-start(config).then(debug('Server started with config:'));
+start(config).then(log('Server started with config:'));
