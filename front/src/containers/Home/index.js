@@ -4,23 +4,32 @@ import Brand from '../../components/Brand';
 import CardList from '../../components/CardList';
 import './style.css';
 
-import data from './data.json';
+import api from '../../api';
 
 class Home extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            cards : []
+        };
     }
 
     render() {
+        const { cards } = this.state;
+
         return (
             <div className="home-component">
                 <Layout>
                     <Brand name="Spotaroom" />
-                    <CardList items={data} />
+                    <CardList items={cards} />
                 </Layout>
             </div>
         );
+    }
+
+    async componentDidMount() {
+        const { data } = await api.marketsByCity('madrid');
+        this.setState({ cards : data });
     }
 }
 
