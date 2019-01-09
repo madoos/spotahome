@@ -10,13 +10,6 @@ const { path, isNil, complement } = require('ramda');
 const { OK, NO_CONTENT } = require('http-status');
 const hasData = complement(isNil);
 const cache = require('@cache-client');
-const monitor = require('@monitor-instance');
-
-const report = projection({
-    homeId : 'params.id',
-    userId : 'headers.authorization'
-});
-
 const { concatProps } = require('@utils');
 const ONE_HOUR = 3600;
 
@@ -59,8 +52,7 @@ const homeDetail = {
             id : Joi.number().required()
         }
     },
-    middleware : [monitor.followRequest(report)],
-    handler    : flow(
+    handler : flow(
         path(['params', 'id']),
         cache.useWith(spotahome.homeDetail, ONE_HOUR),
         withStatus({

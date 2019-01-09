@@ -1,14 +1,14 @@
 const redis = require('redis-promisify');
-// const io = require('socket.io');
-const { stringify, parse } = JSON;
+const { fromEvent, from, merge } = require('rxjs');
+const { map, mergeMap, tap } = require('rxjs/operators');
+const mergeObject = require('ramda').merge;
 
-const WATCHING = 'user-watching-house';
-const LEAVES = 'user-leaves-home';
+const homeKey = homeId => `home:${homeId}`;
+const WATCHING_HOME = 'watching-home';
+const LEAVE_HOME = 'leave-home';
 
 class Monitor {
     constructor(options) {
-        this.subscriber = redis.createClient(options);
-        this.publisher = redis.createClient(options);
         this.client = redis.createClient(options);
     }
 
@@ -16,39 +16,49 @@ class Monitor {
         return new Monitor(...args);
     }
 
-    followRequest(mapper) {
-        return (req, res, next) => {
-            const data = stringify(mapper(req));
-            this.publisher.publish(WATCHING, data);
-            next();
+    async connect(socket) {
+        const connections$ = fromEvent(socket, 'connection');
+
+        const watchingHomes$ = connections$.pipe(
+            mergeMap(client => fromEvent(client, WATCHING_HOME)),
+            mergeMap(data => from(this.addUserWatching(data))),
+            tap(data => socket.emit(data.event, data)),
+            map(mergeObject({ type : WATCHING_HOME }))
+        );
+
+        const leaveHomes$ = connections$.pipe(
+            mergeMap(client => fromEvent(client, LEAVE_HOME)),
+            mergeMap(data => from(this.removeUserWatching(data))),
+            tap(data => socket.emit(data.event, data)),
+            map(mergeObject({ type : LEAVE_HOME }))
+        );
+
+        const usersCountByHomes$ = merge(watchingHomes$, leaveHomes$);
+        return usersCountByHomes$;
+    }
+
+    async removeUserWatching({ homeId, userId }) {
+        const key = homeKey(homeId);
+        await this.client.sremAsync(key, userId);
+        const usersWatching = await this.client.scardAsync(key);
+        return {
+            home   : homeId,
+            users  : usersWatching,
+            event  : key,
+            userId : userId
         };
     }
 
-    /////////////
-    subscribe() {
-        const homeKey = homeId => `home:${homeId}`;
-
-        const handler = {
-            [WATCHING] : async ({ homeId, userId }) => {
-                const key = homeKey(homeId);
-                await this.client.saddAsync(key, userId);
-                const usersWatching = await this.client.scardAsync(key);
-                return usersWatching;
-            },
-            [LEAVES] : async ({ homeId, userId }) => {
-                const key = homeKey(homeId);
-                await this.client.sremAsync(key, userId);
-                const usersWatching = await this.client.scardAsync(key);
-                return usersWatching;
-            }
+    async addUserWatching({ homeId, userId }) {
+        const key = homeKey(homeId);
+        await this.client.saddAsync(key, userId);
+        const usersWatching = await this.client.scardAsync(key);
+        return {
+            home   : homeId,
+            users  : usersWatching,
+            event  : key,
+            userId : userId
         };
-
-        this.subscriber.on('message', async (chanel, message) => {
-            await handler[chanel](parse(message));
-        });
-
-        this.subscriber.subscribe(WATCHING);
-        this.subscriber.subscribe(LEAVES);
     }
 }
 

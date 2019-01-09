@@ -25,6 +25,8 @@
     "ramda": "^0.26.1",
     "redis": "^2.8.0",
     "redis-promisify": "^0.1.2",
+    "rxjs": "^6.3.3",
+    "single-line-log": "^1.1.2",
     "socket.io": "^2.2.0",
     "swagger-ui-express": "^4.0.2",
     "yamljs": "^0.3.0"
@@ -45,7 +47,7 @@
     "@server": "src/server",
     "@cache-client": "src/cache-client",
     "@cache": "src/cache",
-    "@monitor-instance": "src/monitor/instance",
+    "@monitor-client": "src/monitor/instance",
     "@monitor": "src/monitor"
   },
   "jest": {
@@ -58,7 +60,7 @@
       "@server": "<rootDir>/src/server",
       "@cache-client": "<rootDir>src/cache-client.js",
       "@cache": "<rootDir>src/cache",
-      "@monitor-instance": "<rootDir>src/monitor/instance",
+      "@monitor-client": "<rootDir>src/monitor/instance",
       "@monitor": "<rootDir>src/monitor"
     }
   }

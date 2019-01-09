@@ -4,6 +4,7 @@ const config = require('@config');
 const { join } = require('path');
 const YAML = require('yamljs');
 const apiDocs = YAML.load(join(__dirname, '../../swagger.yml'));
+const http = require('http');
 
 const app = server.create({
     docs : {
@@ -14,4 +15,4 @@ const app = server.create({
 
 app.use(config.server.baseURL, endpoints);
 
-module.exports = app;
+module.exports = http.createServer(app);
