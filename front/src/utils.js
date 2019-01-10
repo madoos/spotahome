@@ -12,4 +12,11 @@ const randomId = (limit = 100) => Math.floor(Math.random() * limit) + 1;
 
 const omitMe = n => (n <= 0 ? 0 : n - 1);
 
-export { mapComponent, randomId, omitMe };
+const handleCloseTabWith = handler => {
+    window.addEventListener('beforeunload', ev => {
+        ev.preventDefault();
+        handler();
+    });
+};
+
+export { mapComponent, randomId, omitMe, handleCloseTabWith };

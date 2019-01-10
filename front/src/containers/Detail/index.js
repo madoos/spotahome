@@ -5,7 +5,7 @@ import Monitor from './components/Monitor';
 
 import openSocket from 'socket.io-client';
 import config from '../../config';
-import { randomId, omitMe } from '../../utils';
+import { randomId, omitMe, handleCloseTabWith } from '../../utils';
 
 import { fromEvent } from 'rxjs';
 import { map, pluck } from 'rxjs/operators';
@@ -34,6 +34,7 @@ class Detail extends Component {
 
         return (
             <div className="detail-component-container">
+                <button onClick={this.handleCloseView}>Close view</button>
                 <DetailUI {...data}>
                     <Monitor users={usersWatching} />
                 </DetailUI>
@@ -44,6 +45,7 @@ class Detail extends Component {
     componentDidMount() {
         this.publishWatchingHome();
         this.subscribeUsersWatching();
+        handleCloseTabWith(this.handleCloseView);
     }
 
     credentials() {
@@ -71,6 +73,8 @@ class Detail extends Component {
                 this.setState({ usersWatching : usersCount })
             );
     }
+
+    handleCloseView = () => this.publishLeaveHome();
 }
 
 export default Detail;
