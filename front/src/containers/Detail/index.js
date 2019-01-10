@@ -34,12 +34,11 @@ class Detail extends Component {
 
     render() {
         const { usersWatching, detail } = this.state;
-        const data = { ...detail, id : this.homeId };
 
         return (
             <div className="detail-component-container">
                 {detail ? (
-                    <DetailUI {...data}>
+                    <DetailUI {...detail}>
                         <Monitor users={usersWatching} />
                     </DetailUI>
                 ) : null}

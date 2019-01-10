@@ -8,7 +8,7 @@ const Detail = ({ photo, title, price, children }) => (
             <p>{title}</p>
         </div>
         <div>
-            <span>{price}</span>
+            <span>{price}€</span>
         </div>
         <div>{children}</div>
     </div>
