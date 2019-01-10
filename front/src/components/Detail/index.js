@@ -18,7 +18,7 @@ Detail.propTypes = {
     photo    : string.isRequired,
     title    : string.isRequired,
     price    : number.isRequired,
-    children : any.isRequired
+    children : any
 };
 
 export default Detail;

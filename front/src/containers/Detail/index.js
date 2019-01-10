@@ -5,14 +5,20 @@ import Monitor from './components/Monitor';
 
 import openSocket from 'socket.io-client';
 import config from '../../config';
-import { randomId, omitMe, handleCloseTabWith } from '../../utils';
+import { randomId, omitMe, handleCloseTabWith, renderWhen } from '../../utils';
 
 import { fromEvent } from 'rxjs';
 import { map, pluck } from 'rxjs/operators';
-import { path, prop, merge } from 'ramda';
+import { path, prop, merge, propSatisfies, propIs } from 'ramda';
 import api from '../../api';
 
 import './style.css';
+
+const hasUsers = propSatisfies(userCount => userCount > 0, 'users');
+const hasDetail = propIs(Number, 'id');
+
+const MaybeMonitor = renderWhen(hasUsers, Monitor);
+const MaybeDetailUI = renderWhen(hasDetail, DetailUI);
 
 class Detail extends Component {
     constructor(props) {
@@ -37,13 +43,9 @@ class Detail extends Component {
 
         return (
             <div className="detail-component-container">
-                {detail ? (
-                    <DetailUI {...detail}>
-                        {usersWatching > 0 ? (
-                            <Monitor users={usersWatching} />
-                        ) : null}
-                    </DetailUI>
-                ) : null}
+                <MaybeDetailUI {...detail}>
+                    <MaybeMonitor users={usersWatching} />
+                </MaybeDetailUI>
             </div>
         );
     }

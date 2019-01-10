@@ -10,6 +10,7 @@ const mapComponent = curry((Component, items) => {
 
 const randomId = (limit = 100) => Math.floor(Math.random() * limit) + 1;
 
+// omitMe :: Number -> Number
 const omitMe = n => (n <= 0 ? 0 : n - 1);
 
 const handleCloseTabWith = handler => {
@@ -19,4 +20,9 @@ const handleCloseTabWith = handler => {
     });
 };
 
-export { mapComponent, randomId, omitMe, handleCloseTabWith };
+// renderWhen :: (a -> Boolean) -> Component -> Component | null
+const renderWhen = curry((predicate, Component) => props =>
+    predicate(props) ? <Component {...props} /> : null
+);
+
+export { mapComponent, randomId, omitMe, handleCloseTabWith, renderWhen };
