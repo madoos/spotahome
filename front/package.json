@@ -37,6 +37,7 @@
   "dependencies": {
     "axios": "0.18.0",
     "module-alias": "2.1.0",
+    "pluralize": "7.0.0",
     "prop-types": "15.6.2",
     "ramda": "^0.26.1",
     "react": "16.7.0",

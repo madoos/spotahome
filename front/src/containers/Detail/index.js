@@ -39,7 +39,9 @@ class Detail extends Component {
             <div className="detail-component-container">
                 {detail ? (
                     <DetailUI {...detail}>
-                        <Monitor users={usersWatching} />
+                        {usersWatching > 0 ? (
+                            <Monitor users={usersWatching} />
+                        ) : null}
                     </DetailUI>
                 ) : null}
             </div>
