@@ -1,5 +1,6 @@
 import React from 'react';
 import { string, number, any } from 'prop-types';
+import './style.css';
 
 const Detail = ({ photo, title, price, children }) => (
     <div className="detail-component">

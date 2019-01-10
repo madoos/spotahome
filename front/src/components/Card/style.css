@@ -1,11 +1,21 @@
 .card-component {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5;
+  padding: 5;
+  justify-items: center;
+  align-items: center;
 }
-
 .card-component .photo {
-  height: 160;
-  width: 260;
+  height: 140;
+  width: 240;
 }
 
 .card-component button {
   cursor: pointer;
+  text-decoration: none;
+}
+
+.card-component div {
+  align-self: center;
 }

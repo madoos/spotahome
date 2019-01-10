@@ -3,6 +3,14 @@ import { string, number } from 'prop-types';
 import { Link } from 'react-router-dom';
 import './style.css';
 
+const linkStyle = {
+    display        : 'block',
+    height         : '100%',
+    width          : '100%',
+    textDecoration : 'none',
+    cursor         : 'pointer'
+};
+
 const Card = ({ id, photo, title, price }) => {
     return (
         <div className="card-component">
@@ -13,9 +21,11 @@ const Card = ({ id, photo, title, price }) => {
                 <p>{title}</p>
             </div>
             <div>
-                <span>{price}€</span>
+                <div>{price}€</div>
                 <button>
-                    <Link to={`/detail/${id}`}> More details</Link>
+                    <Link style={linkStyle} to={`/detail/${id}`}>
+                        More details
+                    </Link>
                 </button>
             </div>
         </div>
