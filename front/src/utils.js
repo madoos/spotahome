@@ -8,4 +8,8 @@ const mapComponent = curry((Component, items) => {
     ));
 });
 
-export { mapComponent };
+const randomId = (limit = 100) => Math.floor(Math.random() * limit) + 1;
+
+const omitMe = n => (n <= 0 ? 0 : n - 1);
+
+export { mapComponent, randomId, omitMe };

@@ -1,13 +1,17 @@
 import request from 'axios';
 import { prop } from 'ramda';
+import config from './config';
 
-const MARKETS_URL = 'http://localhost:3000/api/homes/markets';
+const { MARKETS, DETAIL } = config.api;
 
 const marketsByCity = city =>
-    request.get(`${MARKETS_URL}/${city}`).then(prop('data'));
+    request.get(`${MARKETS}/${city}`).then(prop('data'));
+
+const detail = id => request.get(`${DETAIL}/${id}`).then(prop('data'));
 
 const api = {
-    marketsByCity
+    marketsByCity,
+    detail
 };
 
 export default api;
