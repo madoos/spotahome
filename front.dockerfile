@@ -6,6 +6,8 @@ WORKDIR /app
 
 ADD front .
 
+COPY docker-overwrite/config.js src/config.js
+
 RUN npm install
 
 EXPOSE 9000
