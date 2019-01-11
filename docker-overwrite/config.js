@@ -1,10 +1,10 @@
 const config = {
     api : {
-        MARKETS : 'http://api:3000/api/homes/markets',
-        DETAIL  : 'http://api:3000/api/homes/detail'
+        MARKETS : 'http://0.0.0.0:3000/api/homes/markets',
+        DETAIL  : 'http://0.0.0.0:3000/api/homes/detail'
     },
     monitor : {
-        socket : 'http://api:3000/'
+        socket : 'http://0.0.0.0:3000/'
     }
 };
 
