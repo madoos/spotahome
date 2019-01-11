@@ -8,6 +8,8 @@ To require modules with aliases use [module-alias](https://www.npmjs.com/package
 const config = require('@config') // is a local module
 ```
 
+The API includes swagger definition and expose documentation endpoint `http://<HOST>/<PORT>/docs`
+
 ## Services
 
 Expose an api to consume data, real-time monitoring and data caching using Redis.
