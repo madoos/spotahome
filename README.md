@@ -24,8 +24,19 @@
 
 ## How to launch the app?
 
-- easy way
-- manual
+- Docker
+- Easy way
+- Manual
+
+**Docker**
+
+Not ready for production.
+
+```bash
+# in root folder
+docker-compose up
+
+```
 
 **Easy way:**
 

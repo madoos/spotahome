@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.dev.config.js",
     "tdd": "npm run test -- --watchAll",
     "test": "jest --coverage",
     "build": "webpack",
@@ -24,6 +25,7 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "7.2.2",
     "babel-core": "^6.26.0",
     "babel-jest": "23.6.0",
     "babel-loader": "^7.1.2",

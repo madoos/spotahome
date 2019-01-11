@@ -5,3 +5,28 @@ services:
     tty: true
     ports:
       - 6379:6379
+  api:
+    build:
+      context: .
+      dockerfile: ./back.dockerfile
+    tty: true
+    depends_on:
+      - cache
+    links:
+      - cache
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=production
+      - CACHE_URL=redis://cache:6379
+  client:
+    build:
+      context: .
+      dockerfile: ./front.dockerfile
+    tty: true
+    depends_on:
+      - api
+    links:
+      - api
+    ports:
+      - 9000:9000

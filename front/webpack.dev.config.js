@@ -9,7 +9,8 @@ module.exports = {
         filename : 'js/index.js'
     },
     devServer : {
-        port : 9000
+        port : 9000,
+        host : '0.0.0.0'
     },
     module : {
         rules : [
