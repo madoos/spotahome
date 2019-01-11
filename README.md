@@ -30,7 +30,8 @@
 
 **Docker**
 
-Not ready for production.
+Not ready for production (front use webpack-dev-server).
+IMPORTANT: `build and launch apps but API and socket connection is unstable` (only occurred in containers)
 
 ```bash
 # in root folder
