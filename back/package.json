@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tdd": "npm run test -- --watchAll",
-    "test": "docker-compose up -d && jest --coverage --verbose && docker-compose down",
+    "test": "jest --coverage",
+    "test:dev": "docker-compose up -d && npm run test && docker-compose down",
     "dev": "nodemon index.js",
     "start": "node index.js",
     "serve:coverage": "http-server coverage/lcov-report -o"

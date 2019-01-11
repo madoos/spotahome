@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "jest --coverage --verbose",
+    "start": ".bin/up.sh",
+    "stop": ".bin/down.sh",
     "prepublishOnly": "nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "serve:coverage": "http-server coverage/lcov-report -o"
+    "serve:coverage": "http-server coverage/lcov-report -o",
+    "logs": "pm2 logs API"
   },
   "keywords": [],
   "author": "Maurice Domínguez",
@@ -45,5 +47,7 @@
     ]
   },
   "jest": {},
-  "dependencies": {}
+  "dependencies": {
+    "pm2": "^3.2.7"
+  }
 }

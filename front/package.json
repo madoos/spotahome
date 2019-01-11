@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose",
+    "tdd": "npm run test -- --watchAll",
+    "test": "jest --coverage",
     "build": "webpack",
     "build:local": "webpack --env.NODE_ENV=local",
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
