@@ -2,6 +2,8 @@
 
 The frontend is developed with component-based architecture, functional approach (functional programing) because it favors the reuse and building with Webpack.
 
+Use rxjs and socket.io to handle real time connections.
+
 ## Components
 
 The components are divided into two groups. `stateless` used for render UI and `containers` used to handle the state of application.
