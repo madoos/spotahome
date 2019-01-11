@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 161389,
+      "photo": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/e01a09209308fd279a0943c1075aef32786024b1a36b37202c7bae59.jpg",
+      "title": "Ensuite room in 5-bedroom apartment in Prosperidad, Madrid",
+      "price": 550
+    },
+    {
+      "id": 200252,
+      "photo": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/e623bcf04d397851cb90d6ee2a02591a721541440f2e15e80d5ffe5e.jpg",
+      "title": "Cosy 1-bedroom apartment for rent in Nueva España, Madrid",
+      "price": 1350
+    },
+    {
+      "id": 280119,
+      "photo": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/9b0b54f2663b6d85097851a71448b8a083ab6cff8c4ea4dbf450891e.jpg",
+      "title": "Sunny room in 3-bedroom apartment in Hortaleza, Madrid",
+      "price": 600
+    },
+    {
+      "id": 280997,
+      "photo": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/603210b5079221e9687b6c0278a3888719774f73944bfacc6f079043.jpg",
+      "title": "Sunny room in 3-bedroom apartment,Puente de Vallecas, Madrid",
+      "price": 450
+    },
+    {
+      "id": 282242,
+      "photo": "https://d1052pu3rm1xk9.cloudfront.net/smww_768_verified_ur_6_50/4fe45c5cbe8536a3c7b184a059aefd5a21e0f327988de67339f6386b.jpg",
+      "title": "Amazing 2-bedroom apartment for rent in Centro, Madrid",
+      "price": 1500
+    }
+  ],
+  "paginator": {
+    "pageNumber": 3,
+    "count": 7106,
+    "itemCountPerPage": 5,
+    "pages": 1422
+  }
+}

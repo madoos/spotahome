@@ -7,7 +7,7 @@ const Monitor = ({ users }) => {
     return (
         <div className="monitor-component">
             <p className="title">Book now!</p>
-            <p>
+            <p className="message">
                 there are other {users} {pluralize('person', users)} looking at
                 this property
             </p>

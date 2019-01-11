@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "test": "jest --coverage --verbose",
     "prepublishOnly": "nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
@@ -43,8 +44,6 @@
       "git add"
     ]
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
+  "jest": {},
   "dependencies": {}
 }
