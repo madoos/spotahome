@@ -98,6 +98,16 @@ npm --prefix front run build:dev
   you are considered a new user (because the app is without authentication)
 - If you open `http://<HOST>:9000/detail/<ID>` does not work because the app is rendered in client.
 
+**Example**
+
+Front:
+
+![](front.gif)
+
+Back:
+
+![](back.gif)
+
 ## Development approach
 
 - Application developed in "monorepo style"
